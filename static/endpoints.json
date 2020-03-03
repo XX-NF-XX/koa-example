@@ -1,0 +1,60 @@
+{
+  "endpoints": [
+    {
+      "path": "/",
+      "description": "List of available endpoints (you are here)"
+    },
+    {
+      "path": "/health",
+      "description": "Example of simple middleware usage (without router)"
+    },
+    {
+      "path": "/post",
+      "description": "Receive POST body, parse it and return"
+    },
+    {
+      "path": "/status",
+      "description": "Uptime and freemem"
+    },
+    {
+      "path": "/status/uptime",
+      "description": "Uptime only"
+    },
+    {
+      "path": "/status/freemem",
+      "description": "Freemem only"
+    },
+    {
+      "path": "/env",
+      "description": "List of all env variables (Might be a long list!)"
+    },
+    {
+      "path": "/env/:VAR_NAME",
+      "description": "Show a single env variable (try /env/HOME or /env/PWD or /env/AAA)"
+    },
+    {
+      "path": "/error/throw",
+      "description": "Throw a regular error inside a regular function (middleware)"
+    },
+    {
+      "path": "/error/throw-async",
+      "description": "Throw an async error (reject the promise)"
+    },
+    {
+      "path": "/error/throw-ctx-400",
+      "description": "Throw 400 with ctx.throw (message should be exposed)"
+    },
+    {
+      "path": "/error/throw-ctx-501",
+      "description": "Throw 501 with ctx.throw (errors with code >= 500 are not exposed)"
+    },
+    {
+      "path": "/error/throw-ctx-501-expose",
+      "description": "Throw 501 with ctx.throw exposing the message"
+    },
+    {
+      "path": "/error/assert-ctx",
+      "description": "Throw with ctx.assert (expose is set to true by default)"
+    }
+  ]
+}
